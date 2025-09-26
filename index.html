@@ -4,9 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weight Tracker</title>
-    <link rel="stylesheet" src="./styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header>
+      <h1 class="header-title">Weight Tracker</h1>
+    </header>
+    <div id="weight-summary">
+      <table>
+        <tr>
+          <td>
+            <label>Current Weight:</label>
+            73kg
+          </td>
+          <td>
+            <label>Weekly:</label>
+            10%
+          </td>
+          <td>
+            <label>Monthly:</label>
+            4%
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="weight-chart">
+      <!-- Some Sort of Graph with Chart.js here-->
+    </div>
+    <div id="weight-input">
+      <input type="text" placeholder="Add Your Weight" />
+      <button type="button">Add</button>
+      <!-- A custom plus icon button to add -->
+    </div>
+    <div id="weight-history">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Weight</th>
+        </tr>
+        <tr>
+          <td>1/1/2025</td>
+          <td>66</td>
+        </tr>
+        <tr>
+          <td>2/1/2025</td>
+          <td>67</td>
+        </tr>
+        <tr>
+          <td>3/1/2025</td>
+          <td>66.5</td>
+        </tr>
+        <tr>
+          <td>4/1/2025</td>
+          <td>67.1</td>
+        </tr>
+        <tr>
+          <td>5/1/2025</td>
+          <td>66.9</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
