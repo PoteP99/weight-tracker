@@ -35,43 +35,76 @@
     <div id="weight-input">
       <input type="text" placeholder="Add Your Weight" />
       <button type="button">Add</button>
-      <!-- A custom plus icon button to add -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#1f1f1f"
+        id="add-weight-icon"
+      >
+        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+      </svg>
     </div>
-    <div id="weight-history">
-      <table>
-        <tr>
-          <th>Date</th>
-          <th>Weight</th>
-        </tr>
-        <tr>
-          <td>1/1/2025</td>
-          <td>66</td>
-        </tr>
-        <tr>
-          <td>2/1/2025</td>
-          <td>67</td>
-        </tr>
-        <tr>
-          <td>3/1/2025</td>
-          <td>66.5</td>
-        </tr>
-        <tr>
-          <td>4/1/2025</td>
-          <td>67.1</td>
-        </tr>
-        <tr>
-          <td>5/1/2025</td>
-          <td>66.9</td>
-        </tr>
-        <tr>
-          <td>6/1/2025</td>
-          <td>67.3</td>
-        </tr>
-        <tr>
-          <td>7/1/2025</td>
-          <td>67.2</td>
-        </tr>
-      </table>
+    <div id="data-container">
+      <div id="bmi-calculator">
+        <h2>BMI Calculator</h2>
+        <div id="bmi-inputs">
+          <input type="text" id="height" placeholder="Height in cm" />
+          <div id="bmi-button-container">
+            <button type="button" id="calculate-bmi">Calculate BMI</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#1f1f1f"
+              id="calculate-bmi-icon"
+            >
+              <path
+                d="M320-240h60v-80h80v-60h-80v-80h-60v80h-80v60h80v80Zm200-30h200v-60H520v60Zm0-100h200v-60H520v60Zm44-152 56-56 56 56 42-42-56-58 56-56-42-42-56 56-56-56-42 42 56 56-56 58 42 42Zm-314-70h200v-60H250v60Zm-50 472q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div id="bmi-result"></div>
+      </div>
+      <div id="weight-history">
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Weight</th>
+          </tr>
+          <tr>
+            <td>1/1/2025</td>
+            <td>66</td>
+          </tr>
+          <tr>
+            <td>2/1/2025</td>
+            <td>67</td>
+          </tr>
+          <tr>
+            <td>3/1/2025</td>
+            <td>66.5</td>
+          </tr>
+          <tr>
+            <td>4/1/2025</td>
+            <td>67.1</td>
+          </tr>
+          <tr>
+            <td>5/1/2025</td>
+            <td>66.9</td>
+          </tr>
+          <tr>
+            <td>6/1/2025</td>
+            <td>67.3</td>
+          </tr>
+          <tr>
+            <td>7/1/2025</td>
+            <td>67.2</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

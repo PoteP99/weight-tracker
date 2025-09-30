@@ -58,6 +58,42 @@ body {
 #weight-summary button:hover {
   background-color: #0056b3;
 }
+
+#weight-input {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#add-weight-icon {
+  width: 24px;
+  height: 24px;
+  fill: #007bff;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: none;
+  background: none;
+  margin-left: 10px;
+}
+
+#bmi-button-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#calculate-bmi-icon {
+  width: 24px;
+  height: 24px;
+  fill: #28a745;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: none;
+  background: none;
+  margin-left: 10px;
+}
+
 #weight-history {
   width: 100%;
   max-width: 200px;
@@ -81,4 +117,42 @@ body {
   background-color: #f8f8f8;
   font-weight: bold;
   padding: 10px;
+}
+
+#myChart {
+  max-width: 600px;
+  max-height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 16px);
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#data-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#bmi-calculator {
+  padding-top: 20px;
 }

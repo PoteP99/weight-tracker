@@ -25,15 +25,6 @@ new Chart(ctx, {
   },
   options: {
     responsive: true,
-    plugins: {
-      legend: {
-        position: "top",
-      },
-      title: {
-        display: true,
-        text: "Weight Tracker",
-      },
-    },
     scales: {
       y: {
         beginAtZero: false,
