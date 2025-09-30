@@ -46,28 +46,19 @@ body {
   font-weight: bold;
   margin-right: 8px;
 }
-#weight-summary button {
-  padding: 10px 20px;
-  font-size: 1em;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-#weight-summary button:hover {
-  background-color: #0056b3;
-}
 
 #weight-input {
   display: flex;
   align-items: center;
-  padding: 20px;
+}
+
+button {
+  display: none;
 }
 
 #add-weight-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   fill: #007bff;
   cursor: pointer;
   transition: transform 0.2s;
@@ -76,22 +67,22 @@ body {
   margin-left: 10px;
 }
 
-#bmi-button-container {
+#bmi-inputs {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  gap: 10px;
+  padding: 20px;
 }
 
 #calculate-bmi-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   fill: #28a745;
   cursor: pointer;
   transition: transform 0.2s;
   border: none;
   background: none;
-  margin-left: 10px;
 }
 
 #weight-history {
